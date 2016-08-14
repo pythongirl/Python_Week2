@@ -1,0 +1,28 @@
+1) Move my_func file to a subdirectory
+mkdir subdir
+cd subdir
+pwd
+cd ..
+mv my_func /(subdir pwd)
+
+2) Try to run the file from the working dir; will not work
+
+3) Check the PYTHONPATH
+import sys
+from pprint import pprint
+pprint(sys.path)
+
+#will just have working dir path
+
+4) Add the subdir path to PYTHONPATH var
+export PYTHONPATH='subdir pwd'
+
+5) Check the PYTHONPATH 
+import sys
+from pprint import pprint
+pprint(sys.path)
+
+#will have working dir path and subdir path
+
+6) Run the file from working; will work
+
