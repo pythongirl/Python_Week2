@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''
 a. Write a script that connects using telnet to the pynet-rtr1 router. Execute the 'show ip int brief' command on the router and return the output.
 
