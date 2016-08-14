@@ -1,0 +1,15 @@
+1) Remove pyc instances from subdir
+
+2) Unset PYTHONPATH
+env | grep PYTHONPATH
+# This will have subdir's pwd
+unset PYTHONPATH
+env | grep PYTHONPATH
+# This will be empty now
+
+3) Move my_func to /lib/python2.7/site-packages/ 
+cd subdir
+mv my_func.py /../lib/python2.7/site-packages/
+
+4) Run the file c2e1c from working dir (outside subdir); should work
+
